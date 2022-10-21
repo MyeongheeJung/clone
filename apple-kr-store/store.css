@@ -1,0 +1,943 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+  background: rgba(65, 65, 68, 0.05);
+  font-size: 17px;
+  color: #1d1d1f;;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #06c;
+}
+
+span {
+  color: #1d1d1f;
+}
+
+
+/* 메뉴바 */
+.menu-box {
+  height: 48px;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu__list {
+  display: block;
+  width: 960px;
+  padding: 0 22px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__list li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu__list li a {
+  font-size: 12px;
+  font-weight: 400;
+  color: #f5f5f5;
+  opacity: 0.8;
+}
+
+/* 배너 */
+.banner-inner {
+  padding: 17px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+}
+
+.banner__text, .banner__moreInfo {
+  font-size: 12.5px;
+  margin-left: 7px;
+}
+
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* 스토어 콘데이너 */
+.store-container-box {
+  width: 960px;
+  min-height: 248px;
+}
+
+.store-container-inner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.store-container-left {
+  max-width: 640px;
+  padding: 80px 0 64px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.store-left-text {
+  font-size: 42px;
+  font-weight: 600;
+  color: #6e6e73;
+  letter-spacing: -1.5px;
+}
+
+.store-container-right {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 90px 0 74px;
+}
+
+.shop-chat {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 17px;
+}
+
+.shop-chat-img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #fff;
+  margin-right: 5px;
+}
+
+.shop-chat-img img {
+  width: 100%;
+}
+
+.shop-chat-text {
+  font-size: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.shop-chat-bold {
+  font-weight: 500;
+}
+
+/* cards-scroller-box */
+.cards-scroller-box {
+  width: 960px;
+  overflow-x: scroll;
+  padding: 0 30px 50px;
+}
+
+.cards-scroller-inner {
+  display: inline-flex;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+.card-item-box {
+  border-radius: 18px;
+  height: 148px;
+  min-width: 136px;
+  padding: 18px 8px 16px;
+}
+
+.card-item {
+  float: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 10px;
+}
+
+.card-img {
+  padding-bottom: 12px;
+}
+
+.card-img img {
+  width: 120px;
+  aspect-ratio: auto 200 / 130;
+}
+
+.card-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: #1d1d1f;
+}
+
+
+/* .new-products-box */
+.new-products-box {
+  width: 960px;
+  padding-bottom: 34px;
+}
+
+.new-products-title {
+  font-size: 26px;
+  font-weight: 500;
+  color: #6e6e73;
+  letter-spacing: -2px;
+  padding-bottom: 14px;
+}
+
+.new-items-inner {
+  display: inline-flex;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+.new-items-box {
+  overflow-x: scroll;
+}
+
+.new-items {
+  display: inline-block;
+  width: 400px;
+  height: 500px;
+  padding: 30px;
+  border-radius: 20px;
+  color: #f5f5f7;
+  margin-right: 17px;
+  background-size: 400px 500px ;
+}
+
+.item-name {
+  font-size: 12px;
+  padding-bottom: 8px;
+}
+
+.item-info {
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+
+.item-price {
+  font-weight: 400;
+  padding-top: 10px;
+}
+
+.new-items-iphone14Pro {
+  background-image: url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-iphone-14-pro-202209?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1661181419170);
+}
+
+.new-items-ipad {
+  background-image: url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-ipad-202210?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1664628458682);
+  color: #1d1d1f;
+}
+
+.new-items-watch {
+  background-image: url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-watch-s8-202209_GEO_KR?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1661792339846);
+}
+
+.new-items-ipadPro {
+  background-image: url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-ipad-pro-202210_GEO_KR?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1665114493375);
+}
+
+.new-items-iphone14 {
+  background-image: url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-iphone-14-202209_GEO_KR?wid=800&hei=1000&fmt=jpeg&qlt=90&.v=1661890731447);
+  color: #1d1d1f;
+}
+
+.new-items-appleTV {
+  background-image: url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-appletv-202210?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1664628458702);
+  color: #1d1d1f;
+}
+
+.new-items-watchUltra {
+  background-image: url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-watch-ultra-202209_GEO_KR?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1661382550094);
+  color: #1d1d1f;
+}
+
+.new-items-watchSE {
+  background-image: url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-watch-se-202209_GEO_KR?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1663863097789);
+  color: #1d1d1f;
+}
+
+.new-items-airpodsPro {
+  background-image: url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-airpods-pro-202209?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1661016986712);
+}
+
+/* .support-box  */
+.support-box {
+  width: 960px;
+  padding-bottom: 70px;
+}
+
+.support-content {
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+}
+
+.support-left-box, 
+.support-right-box {
+  min-width: 480px;
+  height: 500px;
+}
+
+.support-right-box {
+  margin-left: 17px;
+}
+.support-left .text,
+.support-right .text {
+  padding: 30px 0 0 30px;
+  font-weight: 600;
+  letter-spacing: -2px;
+}
+
+.support-left .text {
+  font-size: 24px;
+}
+
+.support-right .text {
+  font-size: 22px;
+}
+
+.support-left {
+  height: 100%;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  background-image: url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-specialist-202208_GEO_KR?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1658942522458);
+}
+
+.support-right {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.self-fit, .genius-bar {
+  height: 240px;
+  border-radius: 20px;
+}
+
+.self-fit {
+  background-size: 100% 100%;
+  background-image: url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-25-apps-202108?wid=960&hei=480&fmt=p-jpg&qlt=95&.v=1626223748000);
+}
+
+.genius-bar {
+  background-size: 100% 100%;
+  background-image: url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-25-genius-202108?wid=960&hei=480&fmt=p-jpg&qlt=95&.v=1626384443000);
+}
+
+/*shopping-why-box */
+.shopping-why-box {
+  width: 960px;
+  padding-bottom: 34px;
+}
+
+.shopping-why-title {
+  font-size: 26px;
+  font-weight: 500;
+  color: #6e6e73;
+  letter-spacing: -2px;
+  padding-bottom: 14px;
+}
+
+.shopping-why-items-box{
+  overflow-x: scroll;
+}
+
+.shopping-why-items-inner {
+  display: inline-flex;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+.shopping-why-items {
+  display: inline-block;
+  width: 313px;
+  height: 240px;
+  padding: 30px 30px 0 30px;
+  border-radius: 20px;
+  color: #f5f5f7;
+  margin-right: 17px;
+  background-size: 400px 500px ;
+  color: #1d1d1f;
+  background: #fff;
+}
+
+.shopping-why-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 10px;
+}
+.shopping-why-icon img {
+  width: 100%;
+}
+
+.shopping-item-title {
+  font-size: 22px;
+  font-weight: 500;
+  letter-spacing: -1.7px;
+}
+
+.blue-text {
+  color: rgb(63, 110, 184);
+}
+.purple-text {
+  color: #ac39ff;
+}
+
+.sky-text {
+  color: #007aff;
+}
+
+.highlight-text {
+  background-image: linear-gradient(to right,#f8ab5e 0,#f36961 20%,#a176c8 40%,#759beb 60%,#65beb3 80%,#70db96 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* accessory-box */
+.accessory-box {
+  width: 960px;
+  padding-bottom: 34px;
+}
+
+.accessory-title {
+  font-size: 26px;
+  font-weight: 500;
+  color: #6e6e73;
+  letter-spacing: -2px;
+  padding-bottom: 14px;
+}
+
+.accessory-items-box {
+  overflow-x: scroll;
+}
+
+.accessory-items-inner {
+  display: inline-flex;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+.accessory-items {
+  display: inline-block;
+  width: 313px;
+  height: 500px;
+  padding: 30px;
+  border-radius: 20px;
+  color: #f5f5f7;
+  margin-right: 17px;
+  background-size: 400px 500px ;
+  color: #1d1d1f;
+  background: #fff;
+}
+
+.accessory-items-big {
+  width: 400px;
+}
+
+.accessory-info-1 {
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  padding-top: 24px;
+}
+
+.accessory-info-2 { 
+  font-weight: 400;
+  padding-top: 10px;
+}
+
+.accessory-items-1 {
+  background-size: 100% 100%;
+  background-image: url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-accessories-seasonal-202209_GEO_KR?wid=800&hei=1000&fmt=jpeg&qlt=90&.v=1661389755366);
+}
+
+.accessory-items-2 {
+  background-size: 100% 100%;
+  background-image: url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-accessories-202209_GEO_KR?wid=800&hei=1000&fmt=png-alpha&.v=1661392144786);
+}
+
+.accessory-new {
+  font-size: 12px;
+  color: #bf4800;
+}
+
+.accessory-info {
+  font-size: 15px;
+  font-weight: 900;
+  letter-spacing: -1px;
+}
+
+.accessory-price {
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 10px;
+}
+
+.accessory-image {
+  width: 100%;
+  height: 230px;
+  margin-top: 41px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.accessory-image img {
+  height: 100%;
+}
+
+.accessory-colors {
+  padding: 19px 0 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.accessory-colors ul {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.accessory-colors ul li {
+  display: block;
+  margin: 3px;
+}
+
+.accessory-colors ul li img {
+  width: 12px;
+  height: 12px;
+}
+
+
+/* sound-box */
+.sound-box {
+  width: 960px;
+  padding-bottom: 34px;
+}
+
+.sound-title {
+  font-size: 26px;
+  font-weight: 500;
+  color: #6e6e73;
+  letter-spacing: -2px;
+  padding-bottom: 14px;
+}
+
+.sound-items-box {
+  overflow-x: scroll;
+}
+
+.sound-items-inner {
+  display: inline-flex;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+.sound-items {
+  display: inline-block;
+  width: 313px;
+  height: 500px;
+  padding: 30px;
+  border-radius: 20px;
+  color: #f5f5f7;
+  margin-right: 17px;
+  background-size: 400px 500px ;
+  color: #1d1d1f;
+  background: #fff;
+}
+
+.sound-items-big {
+  width: 400px;
+  background-size: 100% 100%;
+  background-image: url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-applemusic-202110?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1633644705000);
+}
+
+.sound-info-1 {
+  font-size: 27px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  padding-top: 24px;
+}
+
+.sound-info-2 { 
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -1px;
+  padding-top: 10px;
+}
+
+.sound-new {
+  font-size: 12px;
+  color: #bf4800;
+  padding-top: 52px;
+}
+
+.sound-new-color {
+  padding-top: 0px;
+}
+
+.sound-info {
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.sound-price {
+  font-size: 16px;
+  font-weight: 400;
+  padding-top: 30px;
+}
+
+.sound-image {
+  width: 100%;
+  height: 230px;
+  margin-top: 41px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.sound-image img {
+  height: 100%;
+}
+
+.sound-colors {
+  padding: 19px 0 6px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.sound-colors ul {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.sound-colors ul li {
+  display: block;
+  margin: 3px;
+}
+
+.sound-colors ul li img {
+  width: 12px;
+  height: 12px;
+}
+
+
+/* service-box */
+.service-box {
+  width: 960px;
+  padding-bottom: 34px;
+}
+
+.service-title {
+  font-size: 26px;
+  font-weight: 500;
+  color: #6e6e73;
+  letter-spacing: -2px;
+  padding-bottom: 14px;
+}
+
+.service-items-box {
+  overflow-x: scroll;
+}
+
+.service-items-inner {
+  display: inline-flex;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+.service-items {
+  display: inline-block;
+  width: 480px;
+  height: 500px;
+  padding: 30px;
+  border-radius: 20px;
+  color: #f5f5f7;
+  margin-right: 17px;
+  background-size: 400px 500px ;
+  color: #1d1d1f;
+  background: #fff;
+}
+
+.service-items-1 {
+  background-size: 100% 100%;
+  background-image: url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-subscriptions-202108?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1626375547000);
+}
+
+.service-items-2 {
+  background-size: 100% 100%;
+  background-image: url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-applecare-202210?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1665249410740);
+}
+
+.service-items-3 {
+  background-size: 100% 100%;
+  background-image: url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-50-homekit-202210_GEO_KR?wid=960&hei=1000&fmt=p-jpg&qlt=95&.v=1665514050289);
+}
+
+.service-mini-title {
+  font-size: 12px;
+  color: #6e6e74;
+  letter-spacing: 0px;
+}
+
+.service-info-1 {
+  font-size: 27px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  padding-top: 10px;
+}
+
+.service-info-2 { 
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: -1px;
+  padding-top: 10px;
+}
+
+
+/* specialSale-box */
+.specialSale-box {
+  width: 960px;
+  padding-bottom: 34px;
+}
+
+.specialSale-title {
+  font-size: 26px;
+  font-weight: 500;
+  color: #6e6e73;
+  letter-spacing: -2px;
+  padding-bottom: 14px;
+}
+
+.specialSale-items-box {
+  overflow-x: scroll;
+}
+
+.specialSale-items-inner {
+  display: inline-flex;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+
+.specialSale-items {
+  display: inline-block;
+  width: 400px;
+  height: 500px;
+  padding: 30px;
+  border-radius: 20px;
+  color: #f5f5f7;
+  margin-right: 17px;
+  background-size: 400px 500px ;
+  color: #1d1d1f;
+  background: #fff;
+}
+
+.specialSale-items-1 {
+  background-size: 100% 100%;
+  background-image: url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-edu-202108_GEO_KR?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1627513218000);
+}
+
+.specialSale-items-2 {
+  color: #fff;
+  background-size: 100% 100%;
+  background-image: url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-business-202209_GEO_KR?wid=800&hei=1000&fmt=jpeg&qlt=90&.v=1661470121762);
+}
+
+.specialSale-items-3 {
+  background-size: 100% 100%;
+  background-image: url(https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/store-card-40-refurb-202108?wid=800&hei=1000&fmt=p-jpg&qlt=95&.v=1627318783000);
+}
+
+.specialSale-mini-title {
+  font-size: 12px;
+  color: #6e6e74;
+  letter-spacing: 0px;
+}
+
+.specialSale-info-1 {
+  font-size: 27px;
+  font-weight: 500;
+  letter-spacing: -1px;
+  padding-top: 10px;
+}
+
+
+/* fast-box */
+.fast-box {
+  width: 960px;
+  padding-bottom: 34px;
+}
+
+.fast-title {
+  font-size: 26px;
+  font-weight: 500;
+  /* color: #6e6e73; */
+  letter-spacing: -2px;
+  padding-bottom: 14px;
+}
+
+.fast-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.fast-btn ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 20px;
+}
+.fast-btn ul li {
+  display: block;
+  padding-right: 10px;
+}
+
+.fast-btn ul li a {
+  font-size: 14px;
+  padding: 12px 16px;
+  background: #e8e8ed;
+  color: #000;
+  border-radius: 30px;
+}
+
+
+/* footnotes-box */
+.footnotes-box {
+  width: 960px;
+  padding-bottom: 34px;
+  border-bottom: 1px solid #e1e1e3e9;
+}
+
+.footnotes-box p {
+  margin: 0;
+}
+
+.footnotes-box a {
+  color: #424245;
+}
+
+.pricing,
+.footnotes {
+  font-size: 12px;
+  color: #6e6e73;
+}
+
+
+/* footer-box */
+.footer-box {
+  width: 960px;
+  padding-bottom: 34px;
+  border-bottom: 1px solid #e1e1e3e9;
+}
+
+.apple-online {
+  padding: 15px 0 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.apple-online span {
+  color: #424245;
+  font-size: 12px;
+  padding: 5px;
+}
+
+.apple-online a img {
+  width: 15px;
+  height: 16px;
+}
+
+.navigation-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.nav-item {
+  font-size: 12px
+}
+
+.nav-item h3 {
+  color: #1d1d1f;
+}
+
+.nav-item ul li {
+  color: #424245;
+  padding: 5px 0;
+}
+
+.nav-item ul li a {
+  color: #626273;
+}
+
+.call {
+  font-size: 12px;
+  color: #626273;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #e1e1e3e9;
+}
+
+.copyright {
+  padding: 5px 0;
+}
+
+.copyright span {
+  font-size: 12px;
+  color: #626273;
+}
